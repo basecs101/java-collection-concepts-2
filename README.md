@@ -7,7 +7,7 @@ Having fun writing and exploring collection classes and their usages.
 
    > A more complete and consistent set of LIFO stack operations is provided by the Deque interface and its implementations, which should be used in preference to this class. For example:
    Deque<Integer> stack = new ArrayDeque<Integer>();
-2. ### Queue and Deque
+2. ### [Queue and Deque](https://levelup.gitconnected.com/visualize-design-and-analyse-the-queue-data-structure-bccde65c7cb4)
     1. #### PriorityQueue (implements Queue)
     2. #### ArrayDeque (implements Deque and Deque extends Queue)
     3. #### LinkedList (implements Deque and Deque extends Queue)

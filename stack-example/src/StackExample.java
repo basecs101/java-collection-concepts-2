@@ -34,5 +34,29 @@ public class StackExample {
         System.out.println("Stack elements - ");
         stack.forEach(System.out::println);
         System.out.println("***************");
+
+//        while (true){
+//            main(new String[]{"Hello"});
+//        }
     }
 }
+
+/*
+... infinite times.
+[...]
+[...]
+[...]
+[main]
+[main]
+[main]
+[main]
+[main]
+[main]
+
+The above is stack example that stores main method calls.
+ */
+
+//java application memory
+//Stack memory-> method calls are stored in stack -> //main -> main -> main -> main -> ... infinite time
+//Heap memory-> Objects
+//Method Area -> Code
