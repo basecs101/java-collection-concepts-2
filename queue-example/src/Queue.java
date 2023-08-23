@@ -66,7 +66,7 @@ public class Queue {
     }
 
     int peek(){
-        return queue[rear];
+        return queue[front];
     }
 
     void printQueue() {
