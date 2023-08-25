@@ -29,8 +29,14 @@ public class CircularQueue {
         if (isEmpty()){
             System.out.println("Circular Queue is empty, hence we cannot remove item!!!");
         } else {
-            removedItem = circularQueue[front];
-            front = (front + 1) % capacity;
+            removedItem = circularQueue[front];//remove element
+            circularQueue[front] = -1;
+            if (front == rear) {
+                front = -1;
+                rear = -1;
+            } else {
+                front = (front + 1) % capacity;
+            }
         }
         System.out.println("Element "+removedItem + " is removed..");
         return removedItem;
