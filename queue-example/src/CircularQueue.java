@@ -62,6 +62,7 @@ public class CircularQueue {
         return front == -1;
     }
 
+    //peek means return item pointed by front, and don't remove it.
     int peek(){
         return circularQueue[front];
     }

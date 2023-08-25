@@ -11,6 +11,7 @@ Having fun writing and exploring collection classes and their usages.
     1. #### PriorityQueue (implements Queue)
     2. #### ArrayDeque (implements Deque and Deque extends Queue)
     3. #### LinkedList (implements Deque and Deque extends Queue)
+    4. #### [DeQueue DS implementation] (https://www.programiz.com/dsa/deque) and https://www.youtube.com/watch?v=kLBuJ1Hle8g&ab_channel=GridoWit
 3. ### List
     1. #### [ArrayList](https://medium.com/@basecs101/comparing-arraylist-and-linkedlist-in-java-latest-2b133b29489f)
     2. #### [LinkedList](https://medium.com/@basecs101/comparing-arraylist-and-linkedlist-in-java-latest-2b133b29489f)
