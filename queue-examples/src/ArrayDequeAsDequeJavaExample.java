@@ -18,7 +18,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 /**
  * Queue
  * Deque imp Queue
- * ArrayDeque - LinkedList both imp Deque
+ * ArrayDeque & LinkedList both imp Deque
  *
  */
 public class ArrayDequeAsDequeJavaExample {
