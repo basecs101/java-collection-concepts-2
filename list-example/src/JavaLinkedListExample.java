@@ -1,5 +1,6 @@
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Stream;
 
 /*
 Iterable
@@ -24,6 +25,10 @@ public class JavaLinkedListExample {
         guestList.add("Aarti");
         guestList.add("Komal");
         guestList.add("Vikram");
+
+        for(String name : guestList){
+            System.out.println(name);
+        }
 
         guestList.forEach(System.out::println);
         System.out.println("------------------");
