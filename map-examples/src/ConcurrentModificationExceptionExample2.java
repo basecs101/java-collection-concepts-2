@@ -1,12 +1,12 @@
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
-public class ConcurrentModificationExceptionExample {
+public class ConcurrentModificationExceptionExample2 {
 
     public static void main(String[] args) {
 
-        Map<String, Long> phoneBook = new HashMap<String, Long>();
+        Map<String, Long> phoneBook = new ConcurrentHashMap<>();
 
         phoneBook.put("Vikram",8149101254L);
         phoneBook.put("Mike",9020341211L);
@@ -20,8 +20,8 @@ public class ConcurrentModificationExceptionExample {
             System.out.println("key = "+ key);
             if ("Vikram".equals(key)){
                 keyIterator.remove();//this works and removes ele from map
-//                phoneBook.remove("Jim");//remove element from map is not allowed
-//                phoneBook.put("Bob",121212121L);
+                phoneBook.remove("Jim");//remove element from map is not allowed
+
             }
         }
         System.out.println(phoneBook);
