@@ -7,6 +7,17 @@ public class HashMapJavaExample {
     public static void main(String[] args) {
         Map<String, Long> myPhoneBook = new HashMap<>();
 
+        /*
+        0[3000h] --> [2000000 | "Komal" | 1212121212L | 4000h ] ---> [3000000 | "Bhagyashree" | 3456345634L | null ]
+        1[]
+        2[]
+        3[]
+        4[1000h] --> [1000000 | "Vikram" | 1234123412L | 3456h ] --> [5000000 | "Moin" | 4545454545L | null ]
+        5[]
+        6[]
+        7[]
+         */
+
         myPhoneBook.put("Vikram", 1234123412L);//insert and update
 
         myPhoneBook.put("Komal",2345234523L);
@@ -16,6 +27,8 @@ public class HashMapJavaExample {
         myPhoneBook.put("Bhagyashree",3456345634L);
         myPhoneBook.put(null, null);
         myPhoneBook.put("abc", null);
+        myPhoneBook.put("Moin", 3232324545L);
+        myPhoneBook.put("Moin", 4545454545L);
 
         myPhoneBook.remove(null);
 
