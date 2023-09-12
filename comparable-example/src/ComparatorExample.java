@@ -1,5 +1,7 @@
 import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 class Employee {
     String name;
@@ -107,8 +109,10 @@ public class ComparatorExample {
 //        Comparator<Employee> salaryComparator = nameComparator.thenComparing(Employee::getSalary);
 
         // Sort the list of employee using the combined comparator
+
+
         List<Employee> sortedEmployee = employeeList.stream()
-                .sorted(Comparator.comparing(Employee::getId)
+                .sorted(Comparator.comparing(Employee:: getId)
                         .thenComparing(Employee::getName)
                         .thenComparing(Employee::getSalary))
                 .toList();
