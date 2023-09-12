@@ -35,7 +35,9 @@ Having fun writing and exploring collection classes and their usages.
 9. ### Comparator and Comparable Interfaces and their differences
 10. ### [HashMap and ConcurrentHashMap](https://medium.com/@basecs101/comparing-hashmap-and-concurrenthashmap-in-java-latest-98fc845ec70c)
 11. ### Immutable Collections in Java 9
-    1. > List.of(<list>) --> returns immutable List
+    1. > List.of(<list>) --> returns immutable List in terms of size , remove and add not allowed also set not allowed
+    2. > Arrays.asList() --> returns immutable List in terms of size, remove and add not allowed but set allowed
+       > Object state can be changed in both cases.
     #### > Use cases
          1. While passing list as param to a method that doesn't modify it.
          2. Use it when multiple threads are sharing the list and you want the same list to be used by all threads.
