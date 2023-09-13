@@ -1,7 +1,5 @@
 import java.util.*;
 import java.util.function.Function;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 class Employee {
     String name;
@@ -62,8 +60,8 @@ class Employee {
 
 class CompareById implements Comparator<Employee> {
     @Override
-    public int compare(Employee o1, Employee o2) {
-        return o1.id - o2.id;
+    public int compare(Employee e1, Employee e2) {
+        return e1.id - e2.id;
     }
 }
 
@@ -87,7 +85,6 @@ public class ComparatorExample {
         employeeList.add(new Employee("Pratik",200, 120000));
         employeeList.add(new Employee("Komal",100, 100000));
 
-
         System.out.println("before sorting");
         employeeList.forEach(System.out::println);
         CompareById compareById = new CompareById();
@@ -110,9 +107,10 @@ public class ComparatorExample {
 
         // Sort the list of employee using the combined comparator
 
+        Function<Employee, Integer> lambdaFunction = employee -> employee.id;
 
         List<Employee> sortedEmployee = employeeList.stream()
-                .sorted(Comparator.comparing(Employee:: getId)
+                .sorted(Comparator.comparing(Employee::getId)
                         .thenComparing(Employee::getName)
                         .thenComparing(Employee::getSalary))
                 .toList();
