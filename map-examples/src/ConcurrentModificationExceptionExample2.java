@@ -20,7 +20,7 @@ public class ConcurrentModificationExceptionExample2 {
             System.out.println("key = "+ key);
             if ("Vikram".equals(key)){
                 keyIterator.remove();//this works and removes ele from map
-                phoneBook.remove("Jim");//remove element from map is not allowed
+                phoneBook.remove("Jim");//remove element from map is allowed
 
             }
         }
