@@ -18,7 +18,7 @@ public class HashMapJavaExample {
         7[]
          */
 
-        myPhoneBook.put("Vikram", 1234123412L);//insert and update
+        myPhoneBook.put("Vikram", 12666663412L);//update
 
         myPhoneBook.put("Komal",2345234523L);
         myPhoneBook.put("Komal",1212121212L);
